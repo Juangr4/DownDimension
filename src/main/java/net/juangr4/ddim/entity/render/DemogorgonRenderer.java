@@ -2,7 +2,6 @@ package net.juangr4.ddim.entity.render;
 
 import net.juangr4.ddim.DDim;
 import net.juangr4.ddim.entity.custom.DemogorgonEntity;
-import net.juangr4.ddim.entity.custom.TestZombie;
 import net.juangr4.ddim.entity.model.DemogorgonModel;
 import net.minecraft.client.renderer.entity.EntityRendererManager;
 import net.minecraft.client.renderer.entity.MobRenderer;

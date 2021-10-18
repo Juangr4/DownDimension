@@ -2,7 +2,6 @@ package net.juangr4.ddim;
 
 import net.juangr4.ddim.entity.ModEntityTypes;
 import net.juangr4.ddim.entity.custom.DemogorgonEntity;
-import net.juangr4.ddim.entity.custom.TestZombie;
 import net.juangr4.ddim.entity.render.DemogorgonRenderer;
 import net.juangr4.ddim.item.ModItems;
 import net.minecraft.block.Block;
@@ -46,14 +45,12 @@ public class DDim
 
     private void setup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
-            GlobalEntityTypeAttributes.put(ModEntityTypes.TEST_ZOMBIE.get(), TestZombie.createAttributes().build());
             GlobalEntityTypeAttributes.put(ModEntityTypes.DEMOGORGON.get(), DemogorgonEntity.createAttributes().build());
         });
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
         // do something that can only be done on the client
-        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.TEST_ZOMBIE.get(), ZombieRenderer::new);
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.DEMOGORGON.get(), DemogorgonRenderer::new);
     }
 

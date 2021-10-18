@@ -10,7 +10,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 @OnlyIn(Dist.CLIENT)
-public class DemogorgonModel<T extends DemogorgonEntity> extends EntityModel<T> {
+public class DemogorgonModel<T extends DemogorgonEntity> extends EntityModel<DemogorgonEntity> {
 
     private final ModelRenderer body;
 	private final ModelRenderer topbody;
@@ -247,7 +247,7 @@ public class DemogorgonModel<T extends DemogorgonEntity> extends EntityModel<T> 
     }
 
     @Override
-	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch){
+	public void setupAnim(DemogorgonEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
 		//previously the render function, render code was moved to a method below
 	}
 
